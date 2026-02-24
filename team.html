@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team | Dependable & Secure Systems Lab</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .page-header {
+            padding: 150px 0 80px;
+            background: linear-gradient(to right, #f8f9fa, #e9ecef);
+            text-align: center;
+        }
+
+        .team-category {
+            margin-bottom: 60px;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .team-member {
+            background: white;
+            border-radius: 12px;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
+        }
+
+        .team-member:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .member-avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: var(--bg-light);
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: var(--primary-color);
+        }
+
+        .member-name {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 5px;
+            color: var(--secondary-color);
+        }
+
+        .member-role {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        .member-links a {
+            color: var(--primary-color);
+            font-size: 0.9rem;
+        }
+
+        .alumni-list {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+        }
+
+        .alumni-item {
+            padding: 15px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .alumni-item:last-child {
+            border-bottom: none;
+        }
+
+        .alumni-name {
+            font-weight: 600;
+            color: var(--secondary-color);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">Dan DS Kim</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="team.html" class="active">Team</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="title">Lab Members</h1>
+            <p class="lead-text">Meet the researchers and students of the Dependable and Secure (DS) systems Lab.</p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+
+            <!-- Postdocs -->
+            <div class="team-category">
+                <div class="section-header">
+                    <h2>Postdoctoral Researchers</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="team-grid"
+                    style="grid-template-columns: repeat(auto-fit, minmax(280px, 350px)); justify-content: center;">
+                    <div class="team-member">
+                        <div class="member-avatar">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h3 class="member-name">Dr. Janet Hyunjae Kang</h3>
+                        <p class="member-role">Postdoc</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Current PhD -->
+            <div class="team-category">
+                <div class="section-header">
+                    <h2>Current Ph.D. Students</h2>
+                    <div class="divider"></div>
+                    <p class="text-center text-light" style="margin-top: 10px;">Total: 10 Students</p>
+                </div>
+                <div class="team-grid">
+                    <!-- Generic cards for 10 students (Since names weren't explicitly listed outside alumni) -->
+                    <script>
+                        // Dynamically generate 10 generic placeholders
+                        for (let i = 1; i <= 10; i++) {
+                            document.write(`
+                            <div class="team-member">
+                                <div class="member-avatar">
+                                    <i class="fas fa-user-graduate"></i>
+                                </div>
+                                <h3 class="member-name">PhD Candidate ${i}</h3>
+                                <p class="member-role">Doctoral Researcher</p>
+                            </div>
+                            `);
+                        }
+                    </script>
+                </div>
+            </div>
+
+            <!-- Alumni -->
+            <div class="team-category">
+                <div class="section-header">
+                    <h2>Ph.D. Alumni</h2>
+                    <div class="divider"></div>
+                    <p class="text-center text-light" style="margin-top: 10px;">Total: 15 Alumni</p>
+                </div>
+
+                <div class="alumni-list">
+                    <div class="alumni-item">
+                        <span class="alumni-name"><a href="https://home.jinhong.org/" target="_blank">Dr. Jin
+                                Hong</a></span>
+                        <p>Senior Lecturer (continuing academic), The University of Western Australia (UWA), Australia.
+                        </p>
+                    </div>
+                    <div class="alumni-item">
+                        <span class="alumni-name"><a
+                                href="https://www.linkedin.com/in/mengmeng-ge-9a813830/?originalSubdomain=nz"
+                                target="_blank">Dr. Mengmeng Ge</a></span>
+                        <p>Senior Lecturer (continuing academic), Monash University, Australia.</p>
+                    </div>
+                    <div class="alumni-item">
+                        <span class="alumni-name"><a href="https://sites.google.com/site/simonenochson86"
+                                target="_blank">Dr. Simon Yusuf Enochson</a></span>
+                        <p>Lecturer (continuing academic), Whitecliffe College, New Zealand.</p>
+                    </div>
+                    <div class="alumni-item">
+                        <span class="alumni-name">Dr. Dilli Sharma</span>
+                        <p>Postdoc, University of Toronto, Canada.</p>
+                    </div>
+                    <div class="alumni-item">
+                        <span class="alumni-name"><a href="https://scholars.latrobe.edu.au/halavizadeh/about"
+                                target="_blank">Dr. Hooman Alavizadeh</a></span>
+                        <p>Lecturer (continuing academic), La Trobe University, Australia.</p>
+                    </div>
+                    <div class="alumni-item">
+                        <span class="alumni-name"><a href="https://sites.google.com/view/mjkim" target="_blank">Dr.
+                                Minjune Kim</a></span>
+                        <p>Senior Research Engineer, CSIRO's Data 61, Australia.</p>
+                    </div>
+                    <div class="alumni-item">
+                        <span class="alumni-name"><a href="https://www.linkedin.com/in/ke-he-353682276/"
+                                target="_blank">Dr. Ke He</a></span>
+                        <p>Lecturer (continuing academic), The University of Canterbury (UC), New Zealand.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <!-- Reusing footer content -->
+        <div class="container footer-container">
+            <div class="footer-info">
+                <h3>Dependable & Secure Systems Lab</h3>
+                <p>The University of Queensland<br>Brisbane, Australia</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://scholar.google.com/citations?user=dIIYVQkAAAAJ&hl=en" target="_blank">Google
+                    Scholar</a>
+                <a href="https://dblp.org/pid/k/DongSeongKim.html" target="_blank">DBLP</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; <span id="year"></span> Dr. Dan DongSeong Kim. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

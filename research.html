@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research | Dependable & Secure Systems Lab</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .page-header {
+            padding: 150px 0 80px;
+            background: linear-gradient(to right, #2b2c34, #1a1a24);
+            text-align: center;
+            color: white;
+        }
+
+        .page-header .title {
+            color: white;
+        }
+
+        .page-header .lead-text {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .research-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 40px;
+        }
+
+        .research-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .research-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .r-card-header {
+            height: 120px;
+            background: linear-gradient(135deg, var(--bg-light), #e0e5ff);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: var(--primary-color);
+        }
+
+        .r-card-body {
+            padding: 30px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .r-card-title {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
+
+        .resource-links {
+            margin-top: auto;
+            padding-top: 20px;
+            border-top: 1px dashed var(--border-color);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .r-tag {
+            background: var(--bg-light);
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: var(--text-color);
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .r-tag:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">Dan DS Kim</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html" class="active">Research</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="title">Research Areas</h1>
+            <p class="lead-text">Exploring cyber security modeling and analysis across diverse domains.</p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="research-grid">
+
+                <!-- Project 1 -->
+                <div class="research-card">
+                    <div class="r-card-header">
+                        <i class="fas fa-car-side"></i>
+                    </div>
+                    <div class="r-card-body">
+                        <h3 class="r-card-title">Autonomous Vehicles Security</h3>
+                        <p class="text-light" style="margin-bottom: 20px;">Securing modern vehicular networks and
+                            cyber-physical systems against emerging threats.</p>
+                        <div class="resource-links">
+                            <a href="#" class="r-tag"><i class="fas fa-file-alt"></i> Papers</a>
+                            <a href="#" class="r-tag"><i class="fas fa-user-graduate"></i> Thesis Projects</a>
+                            <a href="#" class="r-tag"><i class="fas fa-database"></i> Datasets & Codes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="research-card">
+                    <div class="r-card-header">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="r-card-body">
+                        <h3 class="r-card-title">IDS Projects (AI-IDS)</h3>
+                        <p class="text-light" style="margin-bottom: 20px;">Developing advanced Intrusion Detection
+                            Systems utilizing Artificial Intelligence and Machine Learning techniques.</p>
+                        <div class="resource-links">
+                            <a href="#" class="r-tag"><i class="fas fa-brain"></i> AI-IDS</a>
+                            <a href="#" class="r-tag"><i class="fas fa-file-alt"></i> Papers</a>
+                            <a href="#" class="r-tag"><i class="fas fa-database"></i> Datasets</a>
+                            <a href="#" class="r-tag"><i class="fas fa-code"></i> Source code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="research-card">
+                    <div class="r-card-header">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="r-card-body">
+                        <h3 class="r-card-title">Graphical Security Models</h3>
+                        <p class="text-light" style="margin-bottom: 20px;">Constructing robust graphical models to
+                            evaluate and mitigate network security vulnerabilities.</p>
+                        <div class="resource-links">
+                            <a href="#" class="r-tag"><i class="fas fa-book-open"></i> Intro to GSM</a>
+                            <a href="#" class="r-tag"><i class="fas fa-file-alt"></i> Papers</a>
+                            <a href="#" class="r-tag"><i class="fas fa-code"></i> Source codes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="research-card">
+                    <div class="r-card-header">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <div class="r-card-body">
+                        <h3 class="r-card-title">Moving Target Defense</h3>
+                        <p class="text-light" style="margin-bottom: 20px;">Implementing dynamic system adaptations to
+                            increase complexity and cost for attackers proactively.</p>
+                        <div class="resource-links">
+                            <a href="#" class="r-tag"><i class="fas fa-book-open"></i> Intro to MTD</a>
+                            <a href="#" class="r-tag"><i class="fas fa-file-alt"></i> Papers</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="research-card">
+                    <div class="r-card-header">
+                        <i class="fas fa-user-secret"></i>
+                    </div>
+                    <div class="r-card-body">
+                        <h3 class="r-card-title">DeepFake Project</h3>
+                        <p class="text-light" style="margin-bottom: 20px;">Detection and analysis of AI-generated
+                            synthetic media and deepfakes to preserve information integrity.</p>
+                        <div class="resource-links">
+                            <a href="#" class="r-tag"><i class="fas fa-file-alt"></i> Papers & Reports</a>
+                            <a href="#" class="r-tag"><i class="fas fa-code"></i> Codes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="research-card">
+                    <div class="r-card-header">
+                        <i class="fas fa-chess-board"></i>
+                    </div>
+                    <div class="r-card-body">
+                        <h3 class="r-card-title">Red & Blue Team Automation</h3>
+                        <p class="text-light" style="margin-bottom: 20px;">Automating adversarial simulation and defense
+                            strategies to evaluate network resilience.</p>
+                        <div class="resource-links">
+                            <a href="#" class="r-tag"><i class="fas fa-file-alt"></i> Papers</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center" style="margin-top: 60px;">
+                <a href="https://dblp.org/pid/k/DongSeongKim.html" target="_blank" class="btn btn-primary">
+                    <i class="fas fa-external-link-alt" style="margin-right: 8px;"></i>
+                    View Full Publications on DBLP
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <h3>Dependable & Secure Systems Lab</h3>
+                <p>The University of Queensland<br>Brisbane, Australia</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://scholar.google.com/citations?user=dIIYVQkAAAAJ&hl=en" target="_blank">Google
+                    Scholar</a>
+                <a href="https://dblp.org/pid/k/DongSeongKim.html" target="_blank">DBLP</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; <span id="year"></span> Dr. Dan DongSeong Kim. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
