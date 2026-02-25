@@ -52,21 +52,21 @@
         }
 
         .member-avatar {
-            width: 120px;
-            height: 120px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
             background: var(--bg-light);
-            margin: 0 auto 20px;
+            margin: 0 auto 15px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 3rem;
+            font-size: 2.5rem;
             color: var(--primary-color);
         }
 
         .member-name {
             font-family: 'Outfit', sans-serif;
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             margin-bottom: 5px;
             color: var(--secondary-color);
         }
@@ -74,8 +74,15 @@
         .member-role {
             color: var(--text-light);
             font-size: 0.9rem;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             font-weight: 500;
+        }
+
+        .member-topic {
+            font-size: 0.85rem;
+            color: var(--text-color);
+            line-height: 1.4;
+            margin-bottom: 15px;
         }
 
         .member-links a {
@@ -103,6 +110,13 @@
         .alumni-name {
             font-weight: 600;
             color: var(--secondary-color);
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .alumni-item p {
+            margin: 0;
+            font-size: 0.95rem;
         }
     </style>
 </head>
@@ -136,20 +150,58 @@
     <section class="section">
         <div class="container">
 
-            <!-- Postdocs -->
+            <!-- Postdocs and Visitors -->
             <div class="team-category">
                 <div class="section-header">
-                    <h2>Postdoctoral Researchers</h2>
+                    <h2>Postdocs & Visitors</h2>
                     <div class="divider"></div>
                 </div>
-                <div class="team-grid"
-                    style="grid-template-columns: repeat(auto-fit, minmax(280px, 350px)); justify-content: center;">
+                <div class="team-grid">
                     <div class="team-member">
-                        <div class="member-avatar">
-                            <i class="fas fa-user-md"></i>
-                        </div>
-                        <h3 class="member-name">Dr. Janet Hyunjae Kang</h3>
-                        <p class="member-role">Postdoc</p>
+                        <div class="member-avatar"><i class="fas fa-user-md"></i></div>
+                        <h3 class="member-name"><a href="https://scholar.google.co.kr/citations?user=4KLmWT4AAAAJ&hl=en"
+                                target="_blank">Dr. Janet Hyunjae Kang</a></h3>
+                        <p class="member-role">Postdoc, Korea University</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar"><i class="fas fa-user-md"></i></div>
+                        <h3 class="member-name">Dr. Seungki Shi</h3>
+                        <p class="member-role">Visiting Researcher, KAERI</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar"><i class="fas fa-chalkboard-teacher"></i></div>
+                        <h3 class="member-name"><a href="https://lim.kookmin.ac.kr/Professor_ENG" target="_blank">Prof.
+                                Sejoon Lim</a></h3>
+                        <p class="member-role">Visiting Academic, Kookmin Univ.</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar"><i class="fas fa-user-md"></i></div>
+                        <h3 class="member-name">Dr. Jinsu Kim</h3>
+                        <p class="member-role">Postdoc, Jeju National Univ.</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar"><i class="fas fa-chalkboard-teacher"></i></div>
+                        <h3 class="member-name"><a href="https://sites.google.com/view/hds-lab" target="_blank">Prof.
+                                Jeeyoung Kim</a></h3>
+                        <p class="member-role">Visiting Academic, Kyungpook National Univ.</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar"><i class="fas fa-user-graduate"></i></div>
+                        <h3 class="member-name"><a href="https://scholar.google.com/citations?user=wmslIHsAAAAJ&hl=ko"
+                                target="_blank">Mr. Hwejae Lee</a></h3>
+                        <p class="member-role">Visiting PhD, Korea Univ.</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar"><i class="fas fa-user-graduate"></i></div>
+                        <h3 class="member-name"><a href="https://scholar.google.com/citations?hl=ko&user=IfclBYMAAAAJ"
+                                target="_blank">Mr. Sangmin Park</a></h3>
+                        <p class="member-role">Visiting PhD, Korea Univ.</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar"><i class="fas fa-user-graduate"></i></div>
+                        <h3 class="member-name"><a href="https://sites.google.com/view/gsi-cpss-lab/members"
+                                target="_blank">Ms. Borim Na</a></h3>
+                        <p class="member-role">Visiting MS, Yonsei Univ.</p>
                     </div>
                 </div>
             </div>
@@ -157,26 +209,76 @@
             <!-- Current PhD -->
             <div class="team-category">
                 <div class="section-header">
-                    <h2>Current Ph.D. Students</h2>
+                    <h2>Ph.D. Students</h2>
                     <div class="divider"></div>
-                    <p class="text-center text-light" style="margin-top: 10px;">Total: 10 Students</p>
                 </div>
                 <div class="team-grid">
-                    <!-- Generic cards for 10 students (Since names weren't explicitly listed outside alumni) -->
-                    <script>
-                        // Dynamically generate 10 generic placeholders
-                        for (let i = 1; i <= 10; i++) {
-                            document.write(`
-                            <div class="team-member">
-                                <div class="member-avatar">
-                                    <i class="fas fa-user-graduate"></i>
-                                </div>
-                                <h3 class="member-name">PhD Candidate ${i}</h3>
-                                <p class="member-role">Doctoral Researcher</p>
-                            </div>
-                            `);
-                        }
-                    </script>
+                    <div class="team-member">
+                        <div class="member-avatar"><i class="fas fa-user-graduate"></i></div>
+                        <h3 class="member-name"><a href="https://swainsubrat.github.io/" target="_blank">Subrat
+                                Swain</a></h3>
+                        <p class="member-role">UQ & IITD</p>
+                        <p class="member-topic">Adversarial ML for IoT networks.</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar"><i class="fas fa-user-graduate"></i></div>
+                        <h3 class="member-name"><a href="https://www.linkedin.com/in/nhung-nguyen-2953b523/"
+                                target="_blank">Nhung Nguyen</a></h3>
+                        <p class="member-role">UQ (VIN Group)</p>
+                        <p class="member-topic">Security Risk Modeling and Analysis of Vehicles</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar"><i class="fas fa-user-graduate"></i></div>
+                        <h3 class="member-name"><a href="http://tmo.github.io" target="_blank">Tina Moghaddam</a></h3>
+                        <p class="member-role">UQ (Data61 Top-up)</p>
+                        <p class="member-topic">Moving Target Defence against AI Cyber-Attacks</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar"><i class="fas fa-user-graduate"></i></div>
+                        <h3 class="member-name"><a href="https://orcid.org/0000-0003-4923-4329" target="_blank">Pankaj
+                                Upadhyay</a></h3>
+                        <p class="member-role">UQ & IITD</p>
+                        <p class="member-topic">Security Analytics of Internet of Things (IoT)</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar"><i class="fas fa-user-graduate"></i></div>
+                        <h3 class="member-name"><a href="https://www.linkedin.com/in/isha-pali-532a63129"
+                                target="_blank">Isha Pali</a></h3>
+                        <p class="member-role">UQ & IITD</p>
+                        <p class="member-topic">Adversarial ML for Autonomous Vehicles</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar"><i class="fas fa-user-graduate"></i></div>
+                        <h3 class="member-name"><a href="http://www.linkedin.com/in/william-li-765225195"
+                                target="_blank">William Guanting Li</a></h3>
+                        <p class="member-role">UQ (Data61 Top-up)</p>
+                        <p class="member-topic">AI for red team automation</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar"><i class="fas fa-user-graduate"></i></div>
+                        <h3 class="member-name"><a href="https://www.linkedin.com/in/ulysses-lam-402a93174/"
+                                target="_blank">Ulysses Lam</a></h3>
+                        <p class="member-role">UQ</p>
+                        <p class="member-topic">Distributed intrusion detection for vehicles</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar"><i class="fas fa-user-graduate"></i></div>
+                        <h3 class="member-name">Aoran Zhang</h3>
+                        <p class="member-role">UQ</p>
+                        <p class="member-topic">Security for AI systems</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar"><i class="fas fa-user-graduate"></i></div>
+                        <h3 class="member-name">Bin Duan</h3>
+                        <p class="member-role">UQ (Co-supervision)</p>
+                        <p class="member-topic">Automated Testing of Deep Learning Systems</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar"><i class="fas fa-user-graduate"></i></div>
+                        <h3 class="member-name">Moammadreza Najafi</h3>
+                        <p class="member-role">La Trobe Univ (Co-supervision)</p>
+                        <p class="member-topic">Proactive Network Defense using DQL and Game Theory</p>
+                    </div>
                 </div>
             </div>
 
@@ -185,45 +287,64 @@
                 <div class="section-header">
                     <h2>Ph.D. Alumni</h2>
                     <div class="divider"></div>
-                    <p class="text-center text-light" style="margin-top: 10px;">Total: 15 Alumni</p>
                 </div>
 
                 <div class="alumni-list">
                     <div class="alumni-item">
-                        <span class="alumni-name"><a href="https://home.jinhong.org/" target="_blank">Dr. Jin
-                                Hong</a></span>
-                        <p>Senior Lecturer (continuing academic), The University of Western Australia (UWA), Australia.
+                        <span class="alumni-name"><a href="https://www.linkedin.com/in/ke-he-353682276/"
+                                target="_blank">Dr. Ke He</a></span>
+                        <p>Adversarial attacks and defense for Network Intrusion Detection (Currently Lecturer,
+                            University of Canterbury, NZ)</p>
+                    </div>
+                    <div class="alumni-item">
+                        <span class="alumni-name"><a href="https://sites.google.com/view/kokonnchee" target="_blank">Dr.
+                                Kok Onn Chee</a></span>
+                        <p>Security Modelling and Analysis of Internet of Things against Evolving Attacks</p>
+                    </div>
+                    <div class="alumni-item">
+                        <span class="alumni-name"><a href="https://sites.google.com/view/mjkim" target="_blank">Dr.
+                                Minjune Kim</a></span>
+                        <p>Security and Performance Analysis of SDN adopting MTD (Research Engineer at CSRIO's Data61,
+                            Australia)</p>
+                    </div>
+                    <div class="alumni-item">
+                        <span class="alumni-name"><a href="https://sites.google.com/site/dillisharma72/"
+                                target="_blank">Dr. Dilli P. Sharma</a></span>
+                        <p>SDN-based Moving Target Defense (Postdoc at the University of Toronto, Canada)</p>
+                    </div>
+                    <div class="alumni-item">
+                        <span class="alumni-name"><a href="https://www.linkedin.com/in/hooman-alavizadeh-220aa671/"
+                                target="_blank">Dr. Hooman Alavizadeh</a></span>
+                        <p>Effective Security Analysis for Combinations of MTD Techniques on Cloud Computing (Lecturer,
+                            La Trobe University, Australia)</p>
+                    </div>
+                    <div class="alumni-item">
+                        <span class="alumni-name"><a href="https://sites.google.com/site/simonenochson86/"
+                                target="_blank">Dr. Simon (Enochson) Yusuf</a></span>
+                        <p>Dynamic Cyber Security Modeling and Analysis (Lecturer at Whitecliffe College, New Zealand)
                         </p>
+                    </div>
+                    <div class="alumni-item">
+                        <span class="alumni-name"><a href="https://www.linkedin.com/in/kieran-morris/"
+                                target="_blank">Dr. Kieran Morris</a></span>
+                        <p>Reliability and Resiliency Analysis of Smart Grid (Transpower New Zealand)</p>
                     </div>
                     <div class="alumni-item">
                         <span class="alumni-name"><a
                                 href="https://www.linkedin.com/in/mengmeng-ge-9a813830/?originalSubdomain=nz"
                                 target="_blank">Dr. Mengmeng Ge</a></span>
-                        <p>Senior Lecturer (continuing academic), Monash University, Australia.</p>
+                        <p>Graphical security modelling and assessment for the internet of things (Senior Lecturer at
+                            Monash University)</p>
                     </div>
                     <div class="alumni-item">
-                        <span class="alumni-name"><a href="https://sites.google.com/site/simonenochson86"
-                                target="_blank">Dr. Simon Yusuf Enochson</a></span>
-                        <p>Lecturer (continuing academic), Whitecliffe College, New Zealand.</p>
+                        <span class="alumni-name">Dr. Iman Elmir</span>
+                        <p>Security Modeling and Analysis of Intrusion Tolerant Data Centers</p>
                     </div>
                     <div class="alumni-item">
-                        <span class="alumni-name">Dr. Dilli Sharma</span>
-                        <p>Postdoc, University of Toronto, Canada.</p>
-                    </div>
-                    <div class="alumni-item">
-                        <span class="alumni-name"><a href="https://scholars.latrobe.edu.au/halavizadeh/about"
-                                target="_blank">Dr. Hooman Alavizadeh</a></span>
-                        <p>Lecturer (continuing academic), La Trobe University, Australia.</p>
-                    </div>
-                    <div class="alumni-item">
-                        <span class="alumni-name"><a href="https://sites.google.com/view/mjkim" target="_blank">Dr.
-                                Minjune Kim</a></span>
-                        <p>Senior Research Engineer, CSIRO's Data 61, Australia.</p>
-                    </div>
-                    <div class="alumni-item">
-                        <span class="alumni-name"><a href="https://www.linkedin.com/in/ke-he-353682276/"
-                                target="_blank">Dr. Ke He</a></span>
-                        <p>Lecturer (continuing academic), The University of Canterbury (UC), New Zealand.</p>
+                        <span class="alumni-name"><a href="https://home.jinhong.org/" target="_blank">Dr. Jin B.
+                                Hong</a></span>
+                        <p>Scalable and Adaptable Security Modeling and Analysis (Senior Lecturer at University of
+                            Western Australia)</p>
                     </div>
                 </div>
             </div>
