@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autonomous Vehicles Security | Dependable & Secure Systems Lab</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .page-header {
+            padding: 150px 0 80px;
+            background: linear-gradient(to right, #2b2c34, #1a1a24);
+            text-align: center;
+            color: white;
+        }
+
+        .page-header .title {
+            color: white;
+            font-size: 2.5rem;
+        }
+
+        .page-header .lead-text {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .content-section {
+            padding: 40px 0;
+        }
+
+        .content-card {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+            margin-bottom: 40px;
+        }
+
+        .content-card h2 {
+            border-bottom: 2px solid var(--bg-light);
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+        }
+
+        .content-card h3 {
+            font-size: 1.3rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+
+        .paper-list li {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            position: relative;
+            line-height: 1.6;
+        }
+
+        .paper-list li::before {
+            content: '\f15c';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 400;
+            position: absolute;
+            left: 0;
+            top: 2px;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .dataset-list {
+            display: grid;
+            gap: 20px;
+        }
+
+        .dataset-item {
+            background: var(--bg-light);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .dataset-item h4 {
+            margin-bottom: 8px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+        }
+
+        .source-code-box {
+            background: #f8f9fa;
+            border: 1px dashed #ced4da;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .source-code-box a {
+            display: inline-block;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">Dan DS Kim</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html" class="active">Research</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <a href="research.html" style="color: rgba(255,255,255,0.7); display: inline-block; margin-bottom: 20px;">
+                <i class="fas fa-arrow-left"></i> Back to Research
+            </a>
+            <h1 class="title">Autonomous Vehicles Security</h1>
+            <p class="lead-text">Security and Safety for Autonomous Vehicles (SSAV)</p>
+        </div>
+    </header>
+
+    <div class="container content-section">
+
+        <!-- Collaborations -->
+        <div class="content-card">
+            <h2>Collaborations</h2>
+            <ul style="list-style-type: disc; margin-left: 20px; line-height: 1.8;">
+                <li><strong>Korea University, South Korea</strong>: Threat Modeling and Attack-Defense Simulation for
+                    Future Unmanned Vehicles, 2024 - 2029</li>
+                <li><strong>US Army Research Lab, US Virginia Tech, Korea Kentech</strong>: Cyber Defenses and Their
+                    Assessment for Resilient Autonomous Systems</li>
+            </ul>
+        </div>
+
+        <!-- Papers -->
+        <div class="content-card">
+            <h2>Publications</h2>
+
+            <h3>AI based Intrusion Detection for Autonomous Vehicles</h3>
+            <ul class="paper-list">
+                <li>Ulysses Lam, Jin-Hee Cho, Hyuk Lim, Terrence Moore, Frederica Free-Nelson, Hyunjae Kang and Dan Kim,
+                    <strong>Federated Learning-based Intrusion Detection System for Internet of Autonomous Vehicles
+                        against Poisoning Attacks</strong>, Submitted. 2025.</li>
+                <li>Ulysses Lam, Jin-Hee Cho, Hyuk Lim, Terrence Moore, Frederica Free-Nelson and Dongseong Kim,
+                    <strong>A Survey of Intrusion Detection Systems for Autonomous Vehicles Current Solutions and
+                        Limitations</strong>, International Conference on Mobile Internet Security (MobiSec), Sapporo,
+                    Japan, December 17-19, 2024.</li>
+                <li>Lee J, Kim W, Cho JH, Kim DS, Moore TJ, Nelson FF, Lim H. <strong>Deep learning approach for attack
+                        detection in controller area networks</strong>. In Artificial Intelligence and Machine Learning
+                    for Multi-Domain Operations Applications III 2021 Apr 12 (Vol. 11746, pp. 195-200). SPIE.</li>
+            </ul>
+
+            <h3>Intrusion Detection and Response (IRS), Deep Reinforcement Learning, countermeasures (MTD)</h3>
+            <ul class="paper-list">
+                <li>Zhang Q, Yoon HJ, Moore TJ, Yoon S, Kim DD, Lim H, Nelson F, Cho JH. <strong>Securing End-to-End
+                        Reinforcement Learning-Driven Autonomous Driving: A Control Command Utility-based Intrusion
+                        Response System</strong>. IEEE Transactions on Intelligent Vehicles. 2025 Aug 13.</li>
+                <li>Kim S, Yoon S, Cho JH, Kim DS, Moore TJ, Free-Nelson F, Lim H. <strong>DIVERGENCE: Deep
+                        reinforcement learning-based adaptive traffic inspection and moving target defense
+                        countermeasure framework</strong>. IEEE Transactions on Network and Service Management. 2022 Jan
+                    3;19(4):4834-46.</li>
+                <li>Yoon S, Cho JH, Kim DS, Moore TJ, Nelson F, Lim H. <strong>Poster: Address shuffling based moving
+                        target defense for in-vehicle software-defined networks</strong>. In The 25th Annual
+                    International Conference on Mobile Computing and Networking 2019 Oct 11 (pp. 1-3).</li>
+            </ul>
+
+            <h3>Security and Safety Analysis of Autonomous Vehicles</h3>
+            <ul class="paper-list">
+                <li>Nguyen NH, Ge M, Cho JH, Moore TJ, Yoon S, Lim H, Nelson F, Bai G, Kim DD. <strong>Graphical
+                        security modelling for Autonomous Vehicles: A novel approach to threat analysis and defence
+                        evaluation</strong>. Computers & Security. 2025 Mar 1;150:104229.</li>
+                <li>Jungebloud T, Nguyen NH, Kim DD, Zimmermann A. <strong>Model-based structural and behavioural
+                        cybersecurity risk assessment in system designs</strong>. Computers & Security. 2025 Jun
+                    11:104543.</li>
+                <li>Nguyen NH, Cho JH, Moore TJ, Yoon S, Lim H, Nelson F, Bai G, Kim DD. <strong>AuSSE: A Novel
+                        Framework for Security and Safety Evaluation for Autonomous Vehicles</strong>. In 2024 54th
+                    Annual IEEE/IFIP International Conference on Dependable Systems and Networks-Supplemental Volume
+                    (DSN-S) 2024 Jun 24 (pp. 1-5). IEEE.</li>
+                <li>Jungebloud T, H. Nguyen N, Seong Kim D, Zimmermann A. <strong>Hierarchical model-based cybersecurity
+                        risk assessment during system design</strong>. In IFIP International Conference on ICT Systems
+                    Security and Privacy Protection 2023 Jun 14 (pp. 30-44). Cham: Springer Nature Switzerland.</li>
+            </ul>
+
+            <h3>Cyber attacks to Autonomous Vehicles</h3>
+            <ul class="paper-list">
+                <li>Y. Lin, S. Park, H. Kang, H. K. Kim, D. Kim, <strong>Robustness Evaluation under RGB-Camera Attacks
+                        in CARLA: A Systematic Evaluation of Color Modes and Attack Types</strong>, AID, PRDC 2025.</li>
+            </ul>
+        </div>
+
+        <!-- Datasets and Codes -->
+        <div class="content-card">
+            <h2>Datasets & Source Codes</h2>
+            <p style="margin-bottom: 25px; color: var(--text-light);">Various Datasets for Intrusion Detection Systems
+                evaluation for Autonomous Vehicles.</p>
+
+            <div class="dataset-list">
+                <div class="dataset-item">
+                    <h4>Korea University (KU): HCRL Attack & Defense Challenge dataset (with Hyundai Avante CN7) 2021
+                    </h4>
+                    <p>Paper: Hyunjae Kang, et al. "Car Hacking and Defense Competition on In-Vehicle Network." (2021)
+                    </p>
+                    <a href="https://ocslab.hksecurity.net/Datasets/carchallenge2020" target="_blank"
+                        class="text-primary mt-2 inline-block">Download Dataset &rarr;</a>
+                </div>
+
+                <div class="dataset-item">
+                    <h4>Real ORNL Automotive Dynamometer (ROAD) dataset (2020)</h4>
+                    <p>Paper: Verma, M. E., et al. "A comprehensive guide to CAN IDS data and introduction of the ROAD
+                        dataset." (2024)</p>
+                    <a href="https://0xsam.com/road/" target="_blank" class="text-primary mt-2 inline-block">Download
+                        Dataset &rarr;</a>
+                </div>
+
+                <div class="dataset-item">
+                    <h4>DTU can-train-and-test dataset (Chevrolet & Subaru) 2023</h4>
+                    <p>Paper: Lampe, B., & Meng, W. "can-train-and-test: A curated can dataset for automotive intrusion
+                        detection." (2024)</p>
+                    <a href="https://data.dtu.dk/articles/dataset/can-train-and-test/24805533?file=43632393"
+                        target="_blank" class="text-primary mt-2 inline-block">Download Dataset &rarr;</a>
+                </div>
+
+                <div class="dataset-item">
+                    <h4>CAN-MIRGU dataset 2024</h4>
+                    <p>Paper: S. Rajapaksha, et al. "CAN-MIRGU: A Comprehensive CAN Bus Attack Dataset from Moving
+                        Vehicles..." (2024)</p>
+                    <a href="https://github.com/sampathrajapaksha/CAN-MIRGU" target="_blank"
+                        class="text-primary mt-2 inline-block">Download Dataset &rarr;</a>
+                </div>
+
+                <div class="dataset-item">
+                    <h4>Korea University (KU): HCRL X-CANIDS dataset (LF Sonata) 2024</h4>
+                    <p>Paper: Jeong, S., et al. "X-CANIDS: Signal-aware explainable intrusion detection system..."
+                        (2023)</p>
+                    <a href="https://ieee-dataport.org/open-access/x-canids-dataset-vehicle-signal-dataset"
+                        target="_blank" class="text-primary mt-2 inline-block">Download Dataset &rarr;</a>
+                </div>
+
+                <div class="dataset-item">
+                    <h4>ETAS GmbH: SynCAN dataset (Synthetic) 2020</h4>
+                    <p>Paper: M. Hanselmann, et al. "CANet: An Unsupervised Intrusion Detection System for High
+                        Dimensional CAN Bus Data." (2020)</p>
+                    <a href="https://github.com/etas/SynCAN" target="_blank"
+                        class="text-primary mt-2 inline-block">Download Dataset &rarr;</a>
+                </div>
+
+                <div class="dataset-item">
+                    <h4>Korea University (KU): HCRL Car-Hacking dataset 2018</h4>
+                    <p>Paper: Eunbi Seo, et al. "GIDS: GAN based Intrusion Detection System for In-Vehicle Network."
+                        (2018)</p>
+                    <a href="https://ocslab.hksecurity.net/Datasets/car-hacking-dataset" target="_blank"
+                        class="text-primary mt-2 inline-block">Download Dataset &rarr;</a>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 40px; border-bottom: 2px solid var(--bg-light); padding-bottom: 15px;">AV-HARM &
+                AuSSE Framework</h3>
+            <p style="margin-bottom: 20px;">
+                <strong>AuSSE (Autonomous Vehicle Security and Safety Evaluation):</strong> A novel framework designed
+                to assess both the cybersecurity and safety aspects of autonomous vehicles.<br><br>
+                <strong>VHARM (Vehicle Hierarchical Attack Representation Model):</strong> The graphical security model
+                developed within the AuSSE framework to identify attack paths and vulnerabilities.
+            </p>
+
+            <div class="source-code-box">
+                <p style="margin-bottom: 10px; font-weight: 600;"><i class="fas fa-code"></i> Model Source Code &
+                    Visualization Tool</p>
+                <a href="https://github.com/ziz0301/AVHARM" target="_blank" class="btn btn-primary"><i
+                        class="fab fa-github"></i> GitHub Source Code</a>
+                <a href="https://ziz0301.github.io/AVHARM/index.html" target="_blank" class="btn btn-secondary"><i
+                        class="fas fa-chart-network"></i> Visualisation Tool</a>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <!-- Reusing footer content -->
+        <div class="container footer-container">
+            <div class="footer-info">
+                <h3>Dependable & Secure Systems Lab</h3>
+                <p>The University of Queensland<br>Brisbane, Australia</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://scholar.google.com/citations?user=dIIYVQkAAAAJ&hl=en" target="_blank">Google
+                    Scholar</a>
+                <a href="https://dblp.org/pid/k/DongSeongKim.html" target="_blank">DBLP</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; <span id="year"></span> Dr. Dan DongSeong Kim. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

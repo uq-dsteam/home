@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphical Security Models | Dependable & Secure Systems Lab</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .page-header {
+            padding: 150px 0 80px;
+            background: linear-gradient(to right, #2b2c34, #1a1a24);
+            text-align: center;
+            color: white;
+        }
+
+        .page-header .title {
+            color: white;
+            font-size: 2.5rem;
+        }
+
+        .page-header .lead-text {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .content-section {
+            padding: 40px 0;
+        }
+
+        .content-card {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+            margin-bottom: 40px;
+        }
+
+        .content-card h2 {
+            border-bottom: 2px solid var(--bg-light);
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+        }
+
+        .content-card h3 {
+            font-size: 1.3rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+
+        .paper-list li {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            position: relative;
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+
+        .paper-list li::before {
+            content: '\f15c';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 400;
+            position: absolute;
+            left: 0;
+            top: 2px;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .dataset-list {
+            display: grid;
+            gap: 20px;
+        }
+
+        .dataset-item {
+            background: var(--bg-light);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .dataset-item h4 {
+            margin-bottom: 8px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+        }
+
+        .intro-points {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .intro-points li {
+            margin-bottom: 12px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .intro-points li i {
+            position: absolute;
+            left: 0;
+            top: 4px;
+            color: var(--secondary-color);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">Dan DS Kim</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html" class="active">Research</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header" style="background: linear-gradient(135deg, #1f2937 0%, #374151 100%);">
+        <div class="container">
+            <a href="research.html"
+                style="color: rgba(255,255,255,0.7); display: inline-block; margin-bottom: 20px; transition: color 0.3s;">
+                <i class="fas fa-arrow-left"></i> Back to Research
+            </a>
+            <h1 class="title">Graphical Security Models Project</h1>
+            <p class="lead-text">Also known as Graphical Model for Security. A marriage between probability theory and
+                graph theory.</p>
+        </div>
+    </header>
+
+    <div class="container content-section">
+
+        <!-- Introduction -->
+        <div class="content-card">
+            <h2>Introduction to GSM</h2>
+            <ul class="intro-points">
+                <li><i class="fas fa-check-circle"></i> Represent potential attack or defense scenarios using visual
+                    structures (e.g., trees, graphs) to support analysis, reasoning, and decision-making about security.
+                </li>
+                <li><i class="fas fa-check-circle"></i> Explicitly capture potential attack paths and how adversaries
+                    may move through a system.</li>
+                <li><i class="fas fa-check-circle"></i> <strong>Examples:</strong> attack graphs, attack trees, or
+                    Hierarchical Attack Representation Models (HARMs).</li>
+            </ul>
+        </div>
+
+        <!-- Papers -->
+        <div class="content-card">
+            <h2>Selected Publications</h2>
+            <ol class="paper-list" style="padding-left: 20px;">
+                <li>Nhung H. Nguyen, Jin-Hee Cho, Terrence J. Moore, Seunghyun Yoon, Hyuk Lim, Frederica Nelson,
+                    Guangdong Bai, Dan Dongseong Kim, Graphical Security Modelling for Autonomous Vehicles: A Novel
+                    Approach to Threat Analysis and Defence Evaluation, Computers & Security, 2025</li>
+                <li>Nhung H. Nguyen, Jin-Hee Cho, Terrence J. Moore, Seunghyun Yoon, Hyuk Lim, Frederica Nelson,
+                    Guangdong Bai, Dan Dongseong Kim, AuSSE: A Novel Framework for Security and Safety Evaluation for
+                    Autonomous Vehicles, DSN-S, 2024</li>
+                <li>Nhung H. Nguyen, Tino Jungebloud, Dongseong Kim, Armin Zimmermann, Hierarchical Model-Based
+                    Cybersecurity Risk Assessment During System Design, IFIP SEC, 2023</li>
+                <li>Dongwon Lee, Yongwoo Oh, Jin B. Hong, Hyoungshick Kim, Dan Dongseong Kim: PP-GSM: Privacy-preserving
+                    graphical security model for security assessment as a service. Future Gener. Comput. Syst. 142:
+                    351-363 (2023)</li>
+                <li>Taehoon Eom, Seongmo An, Jong-Sou Park, Jin B. Hong, Dongseong Kim, A Framework for Real-Time
+                    Intrusion Response in Software-Defined Networking Using Precomputed Graphical Security Models,
+                    Security and Communication Networks, 2022</li>
+                <li>Simon Y. Enoch, Júlio Mendonça, Jin B. Hong, Mengmeng Ge, Dongseong Kim, An Integrated Security
+                    Hardening Optimization for Dynamic Networks Using Security and Availability Modeling with
+                    Multi-Objective Algorithm, Computer Networks, 2022</li>
+                <li>Simon Yusuf Enoch, Jang Se Lee, Dong Seong Kim: Novel security models, metrics and security
+                    assessment for maritime vessel networks. Comput. Networks 189: 107934 (2021)</li>
+                <li>Armstrong Nhlabatsi, Jin B. Hong, Dong Seong Kim, Rachael Fernandez, Alaa Hussein, Noora Fetais,
+                    Khaled M. Khan: Threat-Specific Security Risk Evaluation in the Cloud. IEEE Trans. Cloud Comput.
+                    9(2): 793-806 (2021)</li>
+                <li>Júlio Mendonça, Simon Yusuf Enoch, Ermeson Carneiro de Andrade, Dan Dongseong Kim: A Hierarchical
+                    Modeling Approach for Evaluating Availability of Dynamic Networks Considering Hardening Options. SMC
+                    2021: 2555-2561</li>
+                <li>Mengmeng Ge, Jin B. Hong, Simon Y. Enoch, Dongseong Kim, Proactive Defense Mechanisms for the
+                    Software-Defined Internet of Things with Non-Patchable Vulnerabilities, Future Generation Computer
+                    Systems, 2018</li>
+                <li>Jin B. Hong, Dongseong Kim, Systematic Evaluation of Cybersecurity Metrics for Dynamic Networks,
+                    Computer Networks, 2018</li>
+                <li>Simon Y. Enoch, Jin B. Hong, Dongseong Kim, Stateless Security Risk Assessment for Dynamic Networks,
+                    DSNW, 2018</li>
+                <li>Armstrong Nhlabatsi, Jin B. Hong, Dongseong Kim, Rachael Fernandez, Noora Fetais, Khaled M. Khan,
+                    Spiral^SRA: A Threat-Specific Security Risk Assessment Framework for the Cloud, QRS, 2018</li>
+                <li>Jin B. Hong, Dongseong Kim, Automated Security Investment Analysis of Dynamic Networks, AISC, 2018
+                </li>
+                <li>Simon Y. Enoch, Jin B. Hong, Dongseong Kim, Time Independent Security Analysis for Dynamic Networks
+                    Using Graphical Security Models, IEEE TrustCom, 2018</li>
+                <li>Dilli P. Sharma, Dongseong Kim, Seunghyun Yoon, Hyuk Lim, Jin-Hee Cho, Terrence J. Moore, FRVM:
+                    Flexible Random Virtual IP Multiplexing in Software-Defined Networks, IEEE TrustCom, 2018</li>
+                <li>Hooman Alavizadeh, Jin B. Hong, Julian Jang-Jaccard, Dongseong Kim, Evaluation for Combination of
+                    Shuffle and Diversity on Moving Target Defense Strategy for Cloud Computing, IEEE TrustCom, 2018
+                </li>
+                <li>Mengmeng Ge, Jin B. Hong, Dongseong Kim, A Framework for Automating Security Analysis of the
+                    Internet of Things, Journal of Network and Computer Applications, 2017</li>
+                <li>Jin B. Hong, Seunghyun Yoon, Hyuk Lim, Dongseong Kim, Optimal Network Reconfiguration for
+                    Software-Defined Networks Using Shuffle-Based Online MTD, IEEE SRDS, 2017</li>
+                <li>Hooman Alavizadeh, Julian Jang-Jaccard, Dongseong Kim, Jin B. Hong, Effective Security Analysis for
+                    Combinations of MTD Techniques on Cloud Computing, ISPEC, 2017</li>
+                <li>Simon Y. Enoch, Mengmeng Ge, Jin B. Hong, Hani Alzaid, Dongseong Kim, Evaluating the Effectiveness
+                    of Security Metrics for Dynamic Networks, IEEE TrustCom, 2017</li>
+                <li>Dongseong Kim, Jin B. Hong, Evaluating Security and Availability of Multiple Redundancy Designs,
+                    IEEE DSNW, 2017</li>
+                <li>Jin B. Hong, Dongseong Kim, Discovering and Mitigating New Attack Paths Using Graphical Security
+                    Models, IEEE DSNW, 2017</li>
+                <li>Jin B. Hong, Dongseong Kim, Towards Scalable Security Analysis Using Multi-Layered Security Models,
+                    Journal of Network and Computer Applications, 2016</li>
+                <li>Jin B. Hong, Dongseong Kim, Assessing the Effectiveness of Moving Target Defense Using Security
+                    Models, IEEE TDSC, 2016</li>
+                <li>Fangcheng Jia, Jin B. Hong, Dongseong Kim, Towards Automated Generation and Visualization of
+                    Hierarchical Attack Representation Models, IEEE DASC, 2015</li>
+                <li>Jin B. Hong, Dongseong Kim, Scalable Security Models for Assessing Effectiveness of Moving Target
+                    Defenses, IEEE DSN, 2014</li>
+                <li>Jin B. Hong, Dongseong Kim, Abdelkrim Haqiq, What Vulnerability Do We Need To Patch First?, IEEE
+                    DSNW, 2014</li>
+                <li>Jin B. Hong, Dongseong Kim, Scalable Security Analysis Using Partition and Merge Approach in an
+                    Infrastructure as a Service Cloud, IEEE UIC, 2014</li>
+                <li>Jin B. Hong, Dongseong Kim, Scalable Security Model Generation and Analysis Using k-importance
+                    Measure, SecureComm, 2013</li>
+                <li>Jin B. Hong, Dongseong Kim, Scalable Security Analysis in Hierarchical Attack Representation Model
+                    Using Centrality Measures, IEEE DSNW, 2013</li>
+                <li>Jin B. Hong, Dongseong Kim, Scalable Attack Representation Model Using Logic Reduction Techniques,
+                    IEEE TrustCom, 2013</li>
+                <li>Jin B. Hong, Dongseong Kim, Performance Analysis of Scalable Attack Representation Models, IFIP SEC,
+                    2013</li>
+                <li>Jin B. Hong, Dongseong Kim, HARMs: Hierarchical Attack Representation Models for Network Security
+                    Analysis, SECAU, 2012</li>
+            </ol>
+        </div>
+
+        <!-- Source Codes -->
+        <div class="content-card">
+            <h2>Source Codes and Tools</h2>
+
+            <h3>Hierarchical Attack Representation Model (HARM) Analysis Tool</h3>
+            <div class="dataset-list">
+                <div class="dataset-item" style="border-left-color: #fca311;">
+                    <h4>Harmat</h4>
+                    <p>Harmat is an engine for HARM analysis used in the Safelite project. It is written using Cython
+                        with the Boost Graph Library for speed. The API closely follows NetworkX.</p>
+                    <a href="https://github.com/whistlebee/harmat" target="_blank"
+                        class="text-primary mt-2 inline-block"><i class="fab fa-github"></i> Repository &rarr;</a>
+                </div>
+                <div class="dataset-item" style="border-left-color: #fca311;">
+                    <h4>Safelite Project</h4>
+                    <p>A Security Assessment Framework for Software Systems. It utilizes HARM to model attack scenarios
+                        and evaluate security posture.</p>
+                    <a href="https://drive.google.com/drive/folders/11MCCzmArdSxWRdx87oMnKIYGAGJ0c8es?usp=drive_link"
+                        target="_blank" class="text-primary mt-2 inline-block"><i class="fas fa-folder"></i>
+                        Installation Guidelines &rarr;</a>
+                </div>
+                <div class="dataset-item" style="border-left-color: #fca311;">
+                    <h4>HARMer</h4>
+                    <p>Cyber-Attacks Automation and Evaluation. An automation framework for cyber-attacks generation
+                        addressing the manual attack execution challenges.</p>
+                    <a href="https://drive.google.com/drive/folders/15wm_0zX76-9BAq4u2NSo2n23lhjp3EUg?usp=drive_link"
+                        target="_blank" class="text-primary mt-2 inline-block"><i class="fas fa-code"></i> Source Code
+                        Request &rarr;</a>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 40px;">AV-HARM in AuSSE framework</h3>
+            <div class="dataset-list">
+                <div class="dataset-item" style="border-left-color: #ef4444;">
+                    <h4>AuSSE & VHARM</h4>
+                    <p>Autonomous Vehicle Security and Safety Evaluation using Vehicle Hierarchical Attack
+                        Representation Model.</p>
+                    <a href="https://github.com/ziz0301/AVHARM" target="_blank"
+                        class="text-primary mt-2 inline-block"><i class="fab fa-github"></i> Source Code &rarr;</a> |
+                    <a href="https://ziz0301.github.io/AVHARM/index.html" target="_blank"
+                        class="text-primary mt-2 inline-block"><i class="fas fa-eye"></i> Visualisation Tool &rarr;</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <!-- Reusing footer content -->
+        <div class="container footer-container">
+            <div class="footer-info">
+                <h3>Dependable & Secure Systems Lab</h3>
+                <p>The University of Queensland<br>Brisbane, Australia</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://scholar.google.com/citations?user=dIIYVQkAAAAJ&hl=en" target="_blank">Google
+                    Scholar</a>
+                <a href="https://dblp.org/pid/k/DongSeongKim.html" target="_blank">DBLP</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; <span id="year"></span> Dr. Dan DongSeong Kim. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

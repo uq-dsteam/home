@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red & Blue Team Automation | Dependable & Secure Systems Lab</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .page-header {
+            padding: 150px 0 80px;
+            background: linear-gradient(to right, #2b2c34, #1a1a24);
+            text-align: center;
+            color: white;
+        }
+
+        .page-header .title {
+            color: white;
+            font-size: 2.5rem;
+        }
+
+        .page-header .lead-text {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .content-section {
+            padding: 40px 0;
+        }
+
+        .content-card {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+            margin-bottom: 40px;
+        }
+
+        .content-card h2 {
+            border-bottom: 2px solid var(--bg-light);
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+        }
+
+        .paper-list {
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .paper-list li {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            position: relative;
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+
+        .paper-list li::before {
+            content: '\f15c';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 400;
+            position: absolute;
+            left: 0;
+            top: 2px;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">Dan DS Kim</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html" class="active">Research</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header" style="background: linear-gradient(135deg, #7f1d1d 0%, #172554 100%);">
+        <div class="container">
+            <a href="research.html"
+                style="color: rgba(255,255,255,0.7); display: inline-block; margin-bottom: 20px; transition: color 0.3s;">
+                <i class="fas fa-arrow-left"></i> Back to Research
+            </a>
+            <h1 class="title">Red & Blue Team Automation</h1>
+            <p class="lead-text">Automating adversarial simulation and defense strategies to evaluate network
+                resilience.</p>
+        </div>
+    </header>
+
+    <div class="container content-section">
+
+        <div class="content-card">
+            <h2>Red Team Automation</h2>
+            <ul class="paper-list">
+                <li>Juhwan Kim, Jihyeon Yu, Youngwoo Lee, Dan Dongseong Kim, Joobeom Yun: HD-FUZZ: Hardware
+                    dependency-aware firmware fuzzing via hybrid MMIO modeling. J. Netw. Comput. Appl. 224: 103835
+                    (2024)</li>
+                <li>Nhung H. Nguyen, Jin-Hee Cho, Terrence J. Moore, Seunghyun Yoon, Hyuk Lim, Frederica Nelson,
+                    Guangdong Bai, Dan Dongseong Kim: AuSSE: A Novel Framework for Security and Safety Evaluation for
+                    Autonomous Vehicles. DSN-S 2024: 1-5</li>
+                <li>Simon Yusuf Enoch, Zhibin Huang, Chun Yong Moon, Donghwan Lee, Myung Kil Ahn, Dong Seong Kim:
+                    HARMer: Cyber-Attacks Automation and Evaluation. IEEE Access 8: 129397-129414 (2020)</li>
+                <li>Young-Hoon Moon, Ji Hong Kim, Dong Seong Kim, Huy Kang Kim: Hybrid Attack Path Enumeration System
+                    Based on Reputation Scores. CIT 2016: 241-248</li>
+                <li>Matthew Ruffell, Jin B. Hong, Hyoungshick Kim, Dong Seong Kim: Towards Automated Exploit Generation
+                    for Embedded Systems. WISA 2016: 161-173</li>
+            </ul>
+        </div>
+
+        <div class="content-card">
+            <h2>Blue Team Automation</h2>
+            <ul class="paper-list">
+                <li>Simon Yusuf Enoch, Chun Yong Moon, Donghwan Lee, Myung Kil Ahn, Dong Seong Kim: A practical
+                    framework for cyber defense generation, enforcement and evaluation. Comput. Networks 208: 108878
+                    (2022)</li>
+                <li>Xiaofan Zhou, Simon Yusuf Enoch, Dong Seong Kim: Markov Decision Process for Automatic Cyber
+                    Defense. WISA 2022: 313-329</li>
+                <li>Mengmeng Ge, Huy Kang Kim, Dong Seong Kim: Evaluating Security and Availability of Multiple
+                    Redundancy Designs when Applying Security Patches. DSN Workshops 2017: 53-60</li>
+                <li>Jin B. Hong, Dong Seong Kim, Abdelkrim Haqiq: What Vulnerability Do We Need to Patch First? DSN
+                    2014: 684-689</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <h3>Dependable & Secure Systems Lab</h3>
+                <p>The University of Queensland<br>Brisbane, Australia</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://scholar.google.com/citations?user=dIIYVQkAAAAJ&hl=en" target="_blank">Google
+                    Scholar</a>
+                <a href="https://dblp.org/pid/k/DongSeongKim.html" target="_blank">DBLP</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; <span id="year"></span> Dr. Dan DongSeong Kim. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

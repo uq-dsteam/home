@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepFake Project | Dependable & Secure Systems Lab</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .page-header {
+            padding: 150px 0 80px;
+            background: linear-gradient(to right, #2b2c34, #1a1a24);
+            text-align: center;
+            color: white;
+        }
+
+        .page-header .title {
+            color: white;
+            font-size: 2.5rem;
+        }
+
+        .page-header .lead-text {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .content-section {
+            padding: 40px 0;
+        }
+
+        .content-card {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+            margin-bottom: 40px;
+        }
+
+        .content-card h2 {
+            border-bottom: 2px solid var(--bg-light);
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+        }
+
+        .paper-list {
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .paper-list li {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            position: relative;
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+
+        .paper-list li::before {
+            content: '\f15c';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 400;
+            position: absolute;
+            left: 0;
+            top: 2px;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .dataset-list {
+            display: grid;
+            gap: 20px;
+        }
+
+        .dataset-item {
+            background: var(--bg-light);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">Dan DS Kim</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html" class="active">Research</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header" style="background: linear-gradient(135deg, #4c1d95 0%, #312e81 100%);">
+        <div class="container">
+            <a href="research.html"
+                style="color: rgba(255,255,255,0.7); display: inline-block; margin-bottom: 20px; transition: color 0.3s;">
+                <i class="fas fa-arrow-left"></i> Back to Research
+            </a>
+            <h1 class="title">DeepFake Project</h1>
+            <p class="lead-text">Detection and analysis of AI-generated synthetic media and deepfakes.</p>
+        </div>
+    </header>
+
+    <div class="container content-section">
+
+        <!-- Papers -->
+        <div class="content-card">
+            <h2>Papers and Thesis Reports</h2>
+
+            <h3 style="color: var(--primary-color); margin-top: 30px; margin-bottom: 15px;">Papers</h3>
+            <ul class="paper-list">
+                <li>Ghasemzadeh F, Moghaddam T, Dai J, Yun J, Kim DD. Towards Generalized Detection of Face-Swap
+                    Deepfake Images. InProceedings of the 3rd ACM Workshop on the Security Implications of Deepfakes and
+                    Cheapfakes 2024 Jul 1 (pp. 8-13).</li>
+            </ul>
+
+            <h3 style="color: var(--primary-color); margin-top: 30px; margin-bottom: 15px;">Thesis Reports</h3>
+            <ul class="paper-list">
+                <li>J. Wang, Towards improving the robustness of Deepfake Audio Detection with Denoising Methods, Master
+                    of Cyber Security, Oct 2025</li>
+                <li>A. Zhang, Robustifying DeepFake Detection: A Study on Preprocessing Pipelines Against Adversarial
+                    Perturbations, Master of Cyber Security, Oct 2025</li>
+                <li>R. Dufty, Visualising the Effect of Training Data Augmentation on Deepfake Detection Using
+                    Explainable AI Techniques, Master of Cyber Security, Oct 2025</li>
+                <li>J. Dai, Pratical Detection of Adversarial Face-Swap Deepfakes (Improved), Master of Computer
+                    Science, Nov 2024</li>
+                <li>F. Ghasemzadeh, Practical Detection of Adversarial Face-Swap Deepfakes for Social Media Platforms,
+                    Master of Data Science, Nov 2023.</li>
+            </ul>
+        </div>
+
+        <!-- Codes & Datasets -->
+        <div class="content-card">
+            <h2>Codes and Datasets</h2>
+
+            <h3 style="color: var(--primary-color); margin-top: 30px; margin-bottom: 15px;">Datasets</h3>
+            <div class="dataset-list">
+                <div class="dataset-item" style="border-left-color: #10b981;">
+                    <h4>FaceForensics Dataset</h4>
+                    <a href="https://www.kaggle.com/datasets/greatgamedota/faceforensics" target="_blank"
+                        class="text-primary mt-2 inline-block"><i class="fas fa-database"></i> Kaggle Link &rarr;</a>
+                </div>
+                <div class="dataset-item" style="border-left-color: #10b981;">
+                    <h4>DeepFake Detection Challenge (DFDC) Dataset</h4>
+                    <a href="https://arxiv.org/abs/2006.07397" target="_blank" class="text-primary mt-2 inline-block"
+                        style="margin-right: 15px;"><i class="fas fa-file-alt"></i> Paper</a>
+                    <a href="https://www.kaggle.com/competitions/deepfake-detection-challenge/data" target="_blank"
+                        class="text-primary mt-2 inline-block"><i class="fas fa-database"></i> Kaggle Dataset</a>
+                </div>
+            </div>
+
+            <h3 style="color: var(--primary-color); margin-top: 40px; margin-bottom: 15px;">Codes</h3>
+            <div class="dataset-list">
+                <div class="dataset-item" style="border-left-color: #3b82f6;">
+                    <h4>Deepfake detection by Jimaing</h4>
+                    <a href="https://github.com/MagicD123/deepfake_detection.git" target="_blank"
+                        class="text-primary mt-2 inline-block"><i class="fab fa-github"></i> Repository &rarr;</a>
+                </div>
+                <div class="dataset-item" style="border-left-color: #3b82f6;">
+                    <h4>Deepfake detection by Faraz</h4>
+                    <a href="https://github.com/faraz-g/deepfake_detection" target="_blank"
+                        class="text-primary mt-2 inline-block"><i class="fab fa-github"></i> Repository &rarr;</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <h3>Dependable & Secure Systems Lab</h3>
+                <p>The University of Queensland<br>Brisbane, Australia</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://scholar.google.com/citations?user=dIIYVQkAAAAJ&hl=en" target="_blank">Google
+                    Scholar</a>
+                <a href="https://dblp.org/pid/k/DongSeongKim.html" target="_blank">DBLP</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; <span id="year"></span> Dr. Dan DongSeong Kim. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

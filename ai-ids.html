@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI & AML for IDS Projects | Dependable & Secure Systems Lab</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .page-header {
+            padding: 150px 0 80px;
+            background: linear-gradient(to right, #2b2c34, #1a1a24);
+            text-align: center;
+            color: white;
+        }
+
+        .page-header .title {
+            color: white;
+            font-size: 2.5rem;
+        }
+
+        .page-header .lead-text {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .content-section {
+            padding: 40px 0;
+        }
+
+        .content-card {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+            margin-bottom: 40px;
+        }
+
+        .content-card h2 {
+            border-bottom: 2px solid var(--bg-light);
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+        }
+
+        .content-card h3 {
+            font-size: 1.3rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+
+        .paper-list li {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            position: relative;
+            line-height: 1.6;
+        }
+
+        .paper-list li::before {
+            content: '\f15c';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 400;
+            position: absolute;
+            left: 0;
+            top: 2px;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .dataset-list {
+            display: grid;
+            gap: 20px;
+        }
+
+        .dataset-item {
+            background: var(--bg-light);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .dataset-item h4 {
+            margin-bottom: 8px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+        }
+
+        .source-code-box {
+            background: #f8f9fa;
+            border: 1px dashed #ced4da;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .source-code-box a {
+            display: inline-block;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">Dan DS Kim</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html" class="active">Research</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <a href="research.html" style="color: rgba(255,255,255,0.7); display: inline-block; margin-bottom: 20px;">
+                <i class="fas fa-arrow-left"></i> Back to Research
+            </a>
+            <h1 class="title">AI and AML for IDS Projects</h1>
+            <p class="lead-text">Interpretable Dependable Secure IDS (IDS^2) & Domain Adaptation for NIDS (DAN-IDS)</p>
+        </div>
+    </header>
+
+    <div class="container content-section">
+
+        <!-- Papers -->
+        <div class="content-card">
+            <h2>Publications</h2>
+            <p style="margin-bottom: 20px; color: var(--text-light);">Selected Papers and Thesis Reports - AI based IDS
+                (since 2002)</p>
+            <ul class="paper-list">
+                <li><strong>[DSN-S 2024]</strong> Subrat Kumar Swain, Vireshwar Kumar, Guangdong Bai, Dan Dongseong Kim:
+                    PANDA: Practical Adversarial Attack Against Network Intrusion Detection.</li>
+                <li><strong>[IEEE Big Data 2022]</strong> Hyejin Kim, Dan Dongseong Kim, Jin-Hee Cho, Terrence J. Moore,
+                    Frederica F. Nelson, Hyuk Lim: Continual Learning with Network Intrusion Dataset.</li>
+                <li><strong>[LM attacks 2022]</strong> Ke He, Dan Dongseong Kim, Jing Sun, Jeong Do Yoo, Young Hun Lee,
+                    Huy Kang Kim: Liuer Mihou: A Practical Framework for Generating and Evaluating Grey-box Adversarial
+                    Attacks against NIDS.</li>
+                <li><strong>[GLOBECOM 2022]</strong> Xinyi Wang, Simon Yusuf Enoch, Dan Dongseong Kim: Semantic
+                    Preserving Adversarial Attack Generation with Autoencoder and Genetic Algorithm.</li>
+                <li><strong>[WISA 2021]</strong> Raymond Mogg, Simon Yusuf Enoch, Dong Seong Kim: A Framework for
+                    Generating Evasion Attacks for Machine Learning Based Network Intrusion Detection Systems.</li>
+                <li><strong>[IEEE Access 2021]</strong> Seunghyun Yoon, Jin-Hee Cho, Dong Seong Kim, Terrence J. Moore,
+                    Frederica Free-Nelson, Hyuk Lim: DESOLATER: Deep Reinforcement Learning-Based Resource Allocation
+                    and Moving Target Defense Deployment Framework.</li>
+                <li><strong>[IEEE Access 2021]</strong> Hyunjun Kim, Sunwoo Ahn, Whoi Ree Ha, Hyunjae Kang, Dong Seong
+                    Kim, Huy Kang Kim, Yunheung Paek: Panop: Mimicry-Resistant ANN-Based Distributed NIDS for IoT
+                    Networks.</li>
+                <li><strong>[IEEE Access 2020]</strong> Jaehyoung Park, Dong Seong Kim, Hyuk Lim: Privacy-Preserving
+                    Reinforcement Learning Using Homomorphic Encryption in Cloud Computing Infrastructures.</li>
+                <li><strong>[ICSSA 2018]</strong> Taehoon Eom, Heesu Kim, SeongMo An, Jong Sou Park, Dong Seong Kim:
+                    Android Malware Detection using Feature Selections and Random Forest.</li>
+                <li><strong>[ICA3PPW 2015]</strong> Hong, Jin B., et al.: Scalable network intrusion detection and
+                    countermeasure selection in virtual network systems.</li>
+                <li><strong>[JISIS 2012]</strong> Sang Min Lee, Dong Seong Kim, Jong Sou Park: A Survey and Taxonomy of
+                    Lightweight Intrusion Detection Systems.</li>
+                <li><strong>[IMIS 2011]</strong> Je Hak Lee, Dong Seong Kim, Sang Min Lee, Jong Sou Park: DDoS Attacks
+                    Detection Using GA Based Optimized Traffic Matrix.</li>
+                <li><strong>[CISIS 2010]</strong> Sang Min Lee, Dong Seong Kim, Ji Ho Kim, Jong Sou Park: Spam Detection
+                    Using Feature Selection and Parameters Optimization.</li>
+                <li><strong>[PRDC 2009]</strong> Sang Min Lee, Dong Seong Kim, YoungHyun Yoon, Jong Sou Park:
+                    Quantitative Intrusion Intensity Assessment Using Important Feature Selection and Proximity Metrics.
+                </li>
+                <li><strong>[ISA 2009]</strong> Tae Hwan Kim, Dong Seong Kim, Sang Min Lee, Jong Sou Park: Detecting
+                    DDoS Attacks Using Dispersible Traffic Matrix and Weighted Moving Average.</li>
+                <li><strong>[ARES 2008]</strong> Dong Seong Kim, Muhammad Anwarul Azim, Jong Sou Park: Privacy
+                    Preserving Support Vector Machines in Wireless Sensor Networks.</li>
+                <li><strong>[CIS 2007]</strong> Lee, Sang Min, Kim, Dong Seong, Park, Jong Sou: A hybrid approach for
+                    real-time network intrusion detection systems.</li>
+                <li><strong>[MICAI 2006]</strong> Dong Seong Kim, Sang Min Lee, Jong Sou Park: Toward Lightweight
+                    Detection and Visualization for Denial of Service Attacks.</li>
+                <li><strong>[CISC 2005]</strong> Jong Sou Park, Khaja Mohammad Shazzad, Dong Seong Kim: Toward Modeling
+                    Lightweight Intrusion Detection System Through Correlation-Based Hybrid Feature Selection.</li>
+                <li><strong>[AINA 2005]</strong> Dong Seong Kim, Ha-Nam Nguyen, Jong Sou Park: Genetic Algorithm to
+                    Improve SVM Based Network Intrusion Detection System.</li>
+                <li><strong>[W2GIS 2004]</strong> Jong Sou Park, Hong Tae Jin, Dong Seong Kim: Intrusion Detection
+                    System for Securing Geographical Information System Web Servers.</li>
+                <li><strong>[ICOIN 2003]</strong> Dong Seong Kim, Jong Sou Park: Network-Based Intrusion Detection with
+                    Support Vector Machines.</li>
+                <li><strong>[KISC 2002]</strong> J. Lee, D. S. Kim, J. S. Park, D. B. Yeom: Detecting Host-based
+                    Intrusion with SVM classification.</li>
+            </ul>
+        </div>
+
+        <!-- Datasets -->
+        <div class="content-card">
+            <h2>Datasets for Intrusion Detection</h2>
+
+            <h3>IoT Datasets</h3>
+            <div class="dataset-list">
+                <div class="dataset-item">
+                    <h4>University of Queensland (UQ) IoT dataset 2021</h4>
+                    <p>Paper: He, Ke, et al. "UQ IoT IDS dataset 2021."</p>
+                    <a href="https://espace.library.uq.edu.au/view/UQ:17b44bb" target="_blank"
+                        class="text-primary mt-2 inline-block">View Data &rarr;</a> |
+                    <a href="https://docs.google.com/document/d/14hsE23DSVDel9E2OrajliobiA-49T_A2fSV2AXUQ6A0/edit"
+                        target="_blank" class="text-primary mt-2 inline-block">Description &rarr;</a>
+                </div>
+                <div class="dataset-item">
+                    <h4>Korea University (KU) IoT dataset 2019</h4>
+                    <p>Paper: Hyunjae Kang, et al. "IoT network intrusion dataset."</p>
+                    <a href="https://ieee-dataport.org/open-access/iot-network-intrusion-dataset" target="_blank"
+                        class="text-primary mt-2 inline-block">View Data &rarr;</a>
+                </div>
+                <div class="dataset-item">
+                    <h4>Ontario Tech University (OTU) IoT botnet dataset</h4>
+                    <p>Paper: I. Ullah and Q. H. Mahmoud. "A Scheme for Generating a Dataset for Anomalous Activity
+                        Detection in IoT Networks." (2020)</p>
+                    <a href="https://sites.google.com/view/iot-network-intrusion-dataset" target="_blank"
+                        class="text-primary mt-2 inline-block">View Data &rarr;</a>
+                </div>
+                <div class="dataset-item">
+                    <h4>UNB CIC IoT dataset 2023</h4>
+                    <a href="https://www.unb.ca/cic/datasets/iotdataset-2023.html" target="_blank"
+                        class="text-primary mt-2 inline-block">View Data &rarr;</a>
+                </div>
+                <div class="dataset-item">
+                    <h4>Kitsune Network Attack 2019</h4>
+                    <a href="https://archive.ics.uci.edu/dataset/516/kitsune+network+attack+dataset" target="_blank"
+                        class="text-primary mt-2 inline-block">View Data &rarr;</a>
+                </div>
+                <div class="dataset-item">
+                    <h4>UNSW Bot-IoT dataset 2019</h4>
+                    <a href="https://research.unsw.edu.au/projects/bot-iot-dataset" target="_blank"
+                        class="text-primary mt-2 inline-block">View Data &rarr;</a>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 40px;">Enterprise Networks</h3>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li style="margin-bottom: 10px;"><i class="fas fa-database text-primary"
+                        style="margin-right: 10px;"></i> <a href="https://www.unb.ca/cic/datasets/ddos-2019.html"
+                        target="_blank">DDoS evaluation dataset (CIC-DDoS2019)</a></li>
+                <li style="margin-bottom: 10px;"><i class="fas fa-database text-primary"
+                        style="margin-right: 10px;"></i> <a href="https://www.unb.ca/cic/datasets/ids-2017.html"
+                        target="_blank">Intrusion Detection evaluation dataset (CIC-IDS2017)</a></li>
+                <li style="margin-bottom: 10px;"><i class="fas fa-database text-primary"
+                        style="margin-right: 10px;"></i> <a
+                        href="https://research.unsw.edu.au/projects/unsw-nb15-dataset" target="_blank">UNSW-NB15
+                        dataset</a></li>
+                <li style="margin-bottom: 10px;"><i class="fas fa-database text-primary"
+                        style="margin-right: 10px;"></i> <a href="https://staff.itee.uq.edu.au/marius/NIDS_datasets/"
+                        target="_blank">UQ Netflow based IDS datasets</a></li>
+                <li style="margin-bottom: 10px;"><i class="fas fa-database text-primary"
+                        style="margin-right: 10px;"></i> <a href="https://data.mendeley.com/datasets/28tmfg3rzb/2"
+                        target="_blank">CoAt-Set (Coordinated Attack Dataset)</a></li>
+            </ul>
+        </div>
+
+        <!-- Source Codes -->
+        <div class="content-card">
+            <h2>Source Codes</h2>
+
+            <h3>IoT Intrusion Detection</h3>
+            <div class="dataset-list">
+                <div class="dataset-item" style="border-left-color: #fca311;">
+                    <h4>Kitsune IDS</h4>
+                    <p>Based on Kitsune Network Attack dataset. Paper: Mirsky et al., NDSS'18.</p>
+                    <a href="https://github.com/ymirsky/Kitsune-py" target="_blank"
+                        class="text-primary mt-2 inline-block"><i class="fab fa-github"></i> Repository &rarr;</a>
+                </div>
+                <div class="dataset-item" style="border-left-color: #fca311;">
+                    <h4>Liuer Mihou Framework</h4>
+                    <p>Updated Kitsune feature extractor and LM attacks (using UQ IoT IDS dataset).</p>
+                    <a href="https://drive.google.com/drive/folders/14izn1UrLcATrqow8Qhb5FssU0OMcTIen" target="_blank"
+                        class="text-primary mt-2 inline-block"><i class="fas fa-folder"></i> Feature Extractor</a> |
+                    <a href="https://github.com/Kihy/liuer-mihou" target="_blank"
+                        class="text-primary mt-2 inline-block"><i class="fab fa-github"></i> LM Attack Repository</a>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 40px;">Autonomous Vehicles Security Codes</h3>
+            <div class="dataset-list">
+                <div class="dataset-item" style="border-left-color: #fca311;">
+                    <h4>CANival</h4>
+                    <p>Time interval- and signal-based IDS (with X-CANIDS and SynCAN datasets).</p>
+                    <a href="https://github.com/trifle19/CANival" target="_blank"
+                        class="text-primary mt-2 inline-block"><i class="fab fa-github"></i> Repository &rarr;</a>
+                </div>
+                <div class="dataset-item" style="border-left-color: #fca311;">
+                    <h4>CANShield</h4>
+                    <p>Signal-based IDS using multiple AE models (with ROAD and SynCAN datasets).</p>
+                    <a href="https://github.com/shahriar0651/canshield" target="_blank"
+                        class="text-primary mt-2 inline-block"><i class="fab fa-github"></i> Repository &rarr;</a>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 40px;">
+                <p style="color: var(--text-light);">Other resources and reports will be updated soon by team members.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <!-- Reusing footer content -->
+        <div class="container footer-container">
+            <div class="footer-info">
+                <h3>Dependable & Secure Systems Lab</h3>
+                <p>The University of Queensland<br>Brisbane, Australia</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://scholar.google.com/citations?user=dIIYVQkAAAAJ&hl=en" target="_blank">Google
+                    Scholar</a>
+                <a href="https://dblp.org/pid/k/DongSeongKim.html" target="_blank">DBLP</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; <span id="year"></span> Dr. Dan DongSeong Kim. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
